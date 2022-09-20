@@ -1,6 +1,10 @@
 import numpy as np
 import string
 
+
+print("type your message")
+inputs = input()
+
 #this makes the alphabet
 alphabet = np.array(list(string.ascii_lowercase + ' '))
 
@@ -9,4 +13,6 @@ x = np.random.randint(24, size=64)
 
 
 #output
-print(np.random.choice(alphabet, size=len(x)))
+output = np.random.choice(alphabet, size=len(x))
+
+print(inputs, output)
