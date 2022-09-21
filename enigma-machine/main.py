@@ -1,5 +1,10 @@
 import numpy as np
 import string
 
-b = np.random.randint(24, size=64)
-print(b)
+
+
+encoder = np.random.randint(1, 24, size=64)
+
+
+
+print(encoder)
