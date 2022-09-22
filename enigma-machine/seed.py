@@ -7,4 +7,4 @@ seed = 5
 encode = np.random.randint(1, 12, size=26)
 
 
-print(b)
+print(encode)
