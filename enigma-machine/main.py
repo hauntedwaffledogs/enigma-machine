@@ -1,9 +1,9 @@
 import numpy as np
 import string
 
-input = input()
+alp = list(string.ascii_lowercase)
 
-alp = list(string.ascii_lowercase) 
+seed = 64876
 
 encoder1 = np.random.choice(alp, size=64)
 
