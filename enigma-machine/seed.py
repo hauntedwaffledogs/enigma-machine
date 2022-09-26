@@ -1,10 +1,10 @@
 import numpy as np
 import string
-import letters
-#inputs = input()
-seed = 5
 
-encode = np.random.randint(1, 12, size=26)
+seed = 2
 
+alphabet = list(map(chr, range(97+seed, 123-seed)))
 
-print(encode)
+output = alphabet
+
+print(output)
