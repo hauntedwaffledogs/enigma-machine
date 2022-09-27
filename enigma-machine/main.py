@@ -2,10 +2,12 @@ from re import X
 import numpy as np
 import string
 
-x = "a"
+x = "s"
 
-reflector1 = ord(x)+3
-reflector2 = reflector1+2
-reflector3 = reflector2-10
+rotor1 = ord(x)+3
+rotor2 = rotor1+2
+rotor3 = rotor2-10
 
-print(chr(reflector3))
+
+
+print(chr(rotor3))
