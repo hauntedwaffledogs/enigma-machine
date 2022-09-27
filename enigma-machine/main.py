@@ -1,7 +1,7 @@
 import numpy as np
 import string
 
-x = "s"
+x = "f"
 
 rotor1 = ord(x)+3
 rotor2 = rotor1+2
