@@ -1,7 +1,11 @@
+from re import X
 import numpy as np
 import string
 
+x = "a"
 
-x = list(map(chr, range(ord('a'), ord('z')+1)))
+reflector1 = ord(x)+3
+reflector2 = reflector1+2
+reflector3 = reflector2-10
 
-print(x)
+print(chr(reflector3))
