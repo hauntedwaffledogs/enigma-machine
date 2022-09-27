@@ -1,6 +1,7 @@
 import numpy as np
 import string
 
+<<<<<<< Updated upstream
 seed1 = 2
 seed2 = 3
 seed3 = 4
@@ -10,5 +11,6 @@ alphabet3 = list(map(chr, range(97+seed3, 123-seed3)))
 
 
 
+=======
+>>>>>>> Stashed changes
 
-print(alphabet1, alphabet2, alphabet3)
