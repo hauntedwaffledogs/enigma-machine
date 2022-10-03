@@ -1,12 +1,7 @@
 import numpy as np
 import string
 
-x = "f"
-
-rotor1 = ord(x)+3
-rotor2 = rotor1+2
-rotor3 = rotor2-10
-
-
-
-print(chr(rotor3))
+roter1 = list(map(chr, range(97, 123)))
+roter2 = list(map(chr, range(97, 123)))
+roter3 = list(map(chr, range(97, 123)))
+print(roter1)
