@@ -4,6 +4,7 @@ import string
 
 
 inputs = ord(input())
+print(inputs)
 #plugboard settings
 
 if inputs == 97:
@@ -18,8 +19,11 @@ if inputs == 98:
 if inputs == 99:
     inputs = 115
 
-if inputs == 110:
+if inputs == 115:
     inputs = 99
+
+if inputs == 111:
+    inputs = 97
 
 
 #rotors
