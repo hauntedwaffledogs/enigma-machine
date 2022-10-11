@@ -1,13 +1,20 @@
 import numpy as np
 import string
-#inputs = input()
-seed = 64254
+plugboard=ord(input())
 
 def rotor(rotor):
-    alphabet = list(string.ascii_lowercase)
-    rotor1 = np.random.choice(alphabet, size=26)
-    a = str(rotor1)
-    print(a)
+    rotor = plugboard+1
 
-rotor(rotor)
 
+    rotor2 = rotor+1
+
+    rotor3 = rotor2+1
+
+    if rotor3 >= 122:
+        rotor3 = rotor3 -26
+
+    print(chr(rotor3))
+
+
+
+rotor = rotor(rotor)
