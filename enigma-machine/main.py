@@ -18,7 +18,7 @@ if inputs == 98:
 if inputs == 99:
     inputs = 115
 
-if inputs = 110:
+if inputs == 110:
     inputs = 99
 
 
