@@ -1,9 +1,27 @@
 import numpy as np
 import string
-plugboard=ord(input())
 
+
+
+inputs = ord(input())
+#plugboard settings
+
+if inputs == 97:
+    inputs = 100
+
+if inputs == 102:
+    inputs = 120
+
+if inputs == 98:
+    inputs = 110
+
+if inputs == 99:
+    inputs = 115
+
+
+#rotors
 def rotor(rotor):
-    rotor = plugboard+1
+    rotor = inputs+1
 
 
     rotor2 = rotor+1
@@ -13,8 +31,7 @@ def rotor(rotor):
     if rotor3 >= 122:
         rotor3 = rotor3 -26
 
+    print(rotor3)
     print(chr(rotor3))
 
-
-
-rotor = rotor(rotor)
+rotor(rotor)
