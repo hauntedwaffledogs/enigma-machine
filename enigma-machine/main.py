@@ -1,10 +1,8 @@
 import numpy as np
 import string
 
-
-
-
 inputs = ord(input())
+
 print(inputs)
 #plugboard settings
 
