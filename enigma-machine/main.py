@@ -1,23 +1,54 @@
 import numpy as np
 import string
 
-plugboard1 = 97+5
-plugboard2 = 97+6
-plugboard3 = 97+4
-plugboard4 = 97+10
-plugboard5 = 97+2
-plugboard6 = 97+15
 
-router1 = 97 +12
-router2 = 97 +2
-router3 = 97 +4
-router4 = 97 +6
-router5 = 97 +8
-router6 = 97 +10
-router7 = 97 +11
-router8 = 97 +13
-router9 = 97 +1
-router10 = 97 +0
 
-print(chr(plugboard1), chr(plugboard2), chr(plugboard3), chr(plugboard4), chr(plugboard5), chr(plugboard6))
-print(chr(router1), chr(router2), chr(router3), chr(router4), chr(router5), chr(router6), chr(router7), chr(router8), chr(router9), chr(router10))
+
+inputs = ord(input())
+print(inputs)
+#plugboard settings
+
+if inputs == 97:
+    inputs = 100
+
+if inputs == 102:
+    inputs = 120
+
+if inputs == 98:
+    inputs = 110
+
+if inputs == 99:
+    inputs = 115
+
+if inputs == 115:
+    inputs = 99
+
+if inputs == 111:
+    inputs = 97
+
+
+#rotors
+def rotor(rotor):
+    rotor = inputs+1
+
+
+    rotor2 = rotor+1
+
+    rotor3 = rotor2+1
+
+    if rotor3 >= 122:
+        rotor3 = rotor3 -26
+
+    #reflection
+    reflect = rotor3 +1
+    reflect2 = reflect + 1
+    reflect3 = reflect2 +1
+
+    if reflect3 >= 122:
+        reflect3 = 97
+
+    print(reflect3)
+    print(chr(reflect3))
+
+
+rotor(rotor)
