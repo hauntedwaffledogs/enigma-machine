@@ -18,6 +18,9 @@ if inputs == 98:
 if inputs == 99:
     inputs = 115
 
+if inputs = 110:
+    inputs = 99
+
 
 #rotors
 def rotor(rotor):
@@ -31,7 +34,16 @@ def rotor(rotor):
     if rotor3 >= 122:
         rotor3 = rotor3 -26
 
-    print(rotor3)
-    print(chr(rotor3))
+    #reflection
+    reflect = rotor3 +1
+    reflect2 = reflect + 1
+    reflect3 = reflect2 +1
+
+    if reflect3 >= 122:
+        reflect3 = 97
+
+    print(reflect3)
+    print(chr(reflect3))
+
 
 rotor(rotor)
