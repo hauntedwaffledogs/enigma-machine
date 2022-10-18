@@ -21,3 +21,5 @@ ciphertext = 'RGWJC'
 plaintext = machine.process_text(ciphertext)
 
 print(plaintext)
+
+#credit to https://pypi.org/project/py-enigma/0.1/
