@@ -17,7 +17,7 @@ msg_key = machine.process_text('KCH')
 # decrypt the cipher text with the unencrypted message key
 machine.set_display(msg_key)
 
-ciphertext = 'AXKMVTCYBGVAV'
+ciphertext = 'RGWJC'
 plaintext = machine.process_text(ciphertext)
 
 print(plaintext)
