@@ -1,49 +1,23 @@
-import numpy as np
-import string
+from enigma.machine import EnigmaMachine
 
-inputs = ord(input())
+# setup machine according to specs from a daily key sheet:
 
-print(inputs)
-#plugboard settings
+machine = EnigmaMachine.from_key_sheet(
+       rotors='II IV V',
+       reflector='B',
+       ring_settings=[1, 20, 11],
+       plugboard_settings='AV BS CG DL FU HZ IN KM OW RX')
 
-if inputs == 97:
-    inputs = 100
+# set machine initial starting position
+machine.set_display('WXC')
 
-if inputs == 102:
-    inputs = 120
+# decrypt the message key
+msg_key = machine.process_text('KCH')
 
-if inputs == 103:
-    inputs = 122
+# decrypt the cipher text with the unencrypted message key
+machine.set_display(msg_key)
 
-if inputs == 98:
-    inputs = 110
+ciphertext = 'RGWJC'
+plaintext = machine.process_text(ciphertext)
 
-if inputs == 99:
-    inputs = 101
-
-
-#rotors
-def rotor(rotor):
-    rotor = inputs+1
-
-
-    rotor2 = rotor+1
-
-    rotor3 = rotor2+1
-
-    if rotor3 >= 122:
-        rotor3 = rotor3 -26
-
-    #reflection
-    reflect = rotor3 +1
-    reflect2 = reflect + 1
-    reflect3 = reflect2 +1
-
-    if reflect3 >= 122:
-        reflect3 = 97
-
-    print(reflect3)
-    print(chr(reflect3))
-
-
-rotor(rotor)
+print(plaintext)
