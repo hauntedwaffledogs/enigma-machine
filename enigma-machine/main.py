@@ -1,25 +1,14 @@
-from enigma.machine import EnigmaMachine
+import numpy as np
+import string as stir
 
-# setup machine according to specs from a daily key sheet:
+originalText = ""
+mainSeed = ""
 
-machine = EnigmaMachine.from_key_sheet(
-       rotors='II IV V',
-       reflector='B',
-       ring_settings=[1, 20, 11],
-       plugboard_settings='AV BS CG DL FU HZ IN KM OW RX')
+print("Input Plaintext")
+input(originalText)
 
-# set machine initial starting position
-machine.set_display('WXC')
+print("Input Seed, Use Numbers")
+input(mainSeed)
 
-# decrypt the message key
-msg_key = machine.process_text('KCH')
+# Encrypting Shit \/\/\/\/
 
-# decrypt the cipher text with the unencrypted message key
-machine.set_display(msg_key)
-
-ciphertext = 'RGWJC'
-plaintext = machine.process_text(ciphertext)
-
-print(plaintext)
-
-#credit to https://pypi.org/project/py-enigma/0.1/
