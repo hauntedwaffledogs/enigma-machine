@@ -1,11 +1,13 @@
+letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+
+shiftedLetters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+
+shiftCounter = int()
+shiftAmount = int(input('Seed: '))
 switchBack = int()
 # RE ADD THESE (anything with > ##) INTO CODE ONCE FUNCTION AND OTHER SHIT WORKS \/\/\/\/\/
 
-##print("Input Plaintext")
-##input(originalText)
-
-##print("Input Seed, Use Numbers")
-##input(mainSeed)
+##plainText = input('Input Text (Lowercase Only, No Special Charactes or Spaces): ')
 
 # Encrypting Shit \/\/\/\/
 
