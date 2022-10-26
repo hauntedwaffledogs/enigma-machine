@@ -1,3 +1,7 @@
+import os
+
+
+
 cock = open('transfer1.txt', 'r')
 plaintext = cock.readline()
 seed = int(cock.readline())
@@ -23,3 +27,7 @@ secondFile = open('transfer2.txt', 'w')
 secondFile.write(skylerwhiteyo+'\n')
 secondFile.write(gustavofring)
 secondFile.close
+
+#file delete shit \/\/\/
+
+cock.close
