@@ -1,6 +1,25 @@
-#up to 512 characters
+cock = open('transfer1.txt', 'r')
+plaintext = cock.readline()
+seed = int(cock.readline())
 
-inputs = str(input('Plaintext (lowercase characters only, no spaces): '))
+txtoutput = [ord(plaintext)-96 for plaintext in plaintext]
+numoutput = seed
 
-output= [ord(inputs)-96 for inputs in inputs]
-print(output)
+
+
+for i in txtoutput:
+    if i < 0 or i > 26:
+        txtoutput.remove(i)
+        break
+    else:
+        continue
+
+jesseweneedtocook = [str(integer) for integer in txtoutput]
+waltawhite = "".join(jesseweneedtocook)
+skylerwhiteyo = str(waltawhite)
+gustavofring = str(numoutput)
+
+secondFile = open('transfer2.txt', 'w')
+secondFile.write(skylerwhiteyo+'\n')
+secondFile.write(gustavofring)
+secondFile.close
