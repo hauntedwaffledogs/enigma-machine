@@ -1,11 +1,9 @@
 import numpy as np
+import string
+import random
 #up to 512 characters
-plaintext = input()
 
+inputs = input()
 
-for i in range(0, len(plaintext)):
-    code = ord(plaintext[i])
-    c = code +4
-    print(c)
-
-
+output= [ord(inputs)-96 for inputs in inputs]
+print(output)
