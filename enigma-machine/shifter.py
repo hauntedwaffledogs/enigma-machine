@@ -20,7 +20,6 @@ caeser(0, 0)
 if shiftAmount > 26:
     while shiftAmount > 26:
         shiftAmount = shiftAmount - 26
-        #print(shiftAmount)
         if shiftAmount in range(len(letters)):
             break
     
