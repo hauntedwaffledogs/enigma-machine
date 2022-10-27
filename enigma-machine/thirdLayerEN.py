@@ -1,5 +1,5 @@
 
-cock = open('transfer1.txt', 'r')
+cock = open('transfer3.txt', 'r')
 plaintext = cock.read()
 
 text2numoutput = [ord(plaintext)-96 for plaintext in plaintext]
@@ -20,7 +20,7 @@ cock.close
 
 
 
-seed = open('seed1.txt', 'r')
+seed = open('seed3.txt', 'r')
 elSeed = int(seed.readline())
 seed.close
 
@@ -69,4 +69,8 @@ while sCounter < msgLength:
         break
         
 
-print(output)
+tumblr = ''.join(str(e) for e in output)
+
+outputfile = open('finaloutput.txt', 'w')
+outputfile.write(tumblr)
+outputfile.close
