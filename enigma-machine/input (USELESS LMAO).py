@@ -3,6 +3,8 @@ seed = input('Input your first Seed numbers (Use only numbers, no letters or Spe
 
 
 firstFile = open('transfer1.txt', 'w')
-firstFile.write(plTxt+'\n')
-firstFile.write(seed)
+seed1File = open('seed1.txt', 'w')
+firstFile.write(plTxt)
+seed1File.write(seed)
 firstFile.close
+seed1File.close
