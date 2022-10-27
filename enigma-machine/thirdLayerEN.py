@@ -21,10 +21,20 @@ cock.close
 
 
 seed = open('seed3.txt', 'r')
+
+scrambled = open('scrambler.txt', 'r')
+whenShouldScramble = open('seed5.txt', 'r')
+scrambledLetters = scrambled.read()
+
+
+if whenShouldScramble == '3':
+    letters = [ord(scrambled)-96 for scrambled in scrambled]
+else:
+    letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+
 elSeed = int(seed.readline())
 seed.close
-
-letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+scrambled.close
 
 shiftedLetters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
