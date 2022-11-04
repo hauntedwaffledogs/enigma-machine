@@ -7,5 +7,7 @@ inputs = input('enter in encrypted message: ')
 for i in inputs:
     d = ord(i)
     peepeepoopoo = d - ip
-    output.append(peepeepoopoo)
+    f = chr(peepeepoopoo)
+    output.append(f)
+
 print(output)
