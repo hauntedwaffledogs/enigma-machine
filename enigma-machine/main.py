@@ -1,23 +1,6 @@
-import random
-fart = random.randrange(1, 10)
+import numpy as np 
 
-inputs = input('message to encrypt: ')
+inputs = 'fartz'
 
-output = []
+print(list(inputs))
 
-
-for i in inputs:
-    x = ord(i)
-    y = x +fart
-    output.append(y)
-print(output)
-
-fart = str(fart)
-file1 = open('key1.txt', 'w')
-file1.write(fart)
-file1.close
-
-
-for x in output:
-    pp = chr(x)
-    print(pp)
